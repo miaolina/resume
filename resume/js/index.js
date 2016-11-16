@@ -6,28 +6,41 @@ var elevator = {
     init: function () {
         $(document).scroll(this.scroll.bind(this));
     },
-    scroll: function () {//响应document的scroll事件
-        //查找div，对每个元素执行：
-        $("div").each(function (i,elem) {
+    scroll: function () {
+            //响应document的scroll事件
+            //查找div，对每个元素执行：
+        $("div").each(function (i, elem) {
             //function(i,elem){i:下标, elem:DOM元素}
             //获取当前元素就距页面顶部的总距离totalTop
-           // var totalTop=$(elem).offset().top;
+            // var totalTop=$(elem).offset().top;
             //获取页面滚动过的距离scrollTop
             var scrollTop = $("body").scrollTop();
             //用totalTop-scrollTop，保存在innerTop
-           // var innerTop=totalTop-scrollTop;
+            // var innerTop=totalTop-scrollTop;
             //如果innerTop>UPLEVEL且<=DOWNLEVEL
-           // var scrollTop = $("body").scrollTop();
-            if (scrollTop > 900) {
+            // var scrollTop = $("body").scrollTop();
+            console.log(scrollTop);
+            if (scrollTop > 800) {
                 $("#individual_profiles ul li").css("animationPlayState", "running");
                 $("#individual_profiles div h3").css("animationPlayState", "running");
             }
-            if (scrollTop > 1400)
+            if (scrollTop > 1500) {
                 $("#production h3+ul>li").css("animationPlayState", "running");
-            if (scrollTop > 1900)
+               /* $("#production h3+ul>li").css("-o-animationPlayState", "running");
+                $("#production h3+ul>li").css("-webkit-animationPlayState", "running");
+                $("#production h3+ul>li").css("-moz-animationPlayState", "running");*/
+            }
+            if (scrollTop > 2000) {
                 $("#skill ul li").css("animationPlayState", "running");
-            if (scrollTop > 2300)
+       /*         $("#skill ul li").css("-webkit-animationPlayState", "running");
+                $("#skill ul li").css("-moz-animationPlayState", "running");*/
+            }
+            if (scrollTop > 4200) {
                 $("#content ul li").css("animationPlayState", "running");
+               /* $("#content ul li").css("-o-animationPlayState", "running");
+                $("#content ul li").css("-webkit-animationPlayState", "running");
+                $("#content ul li").css("-moz-animationPlayState", "running");*/
+            }
         });
     }
 };
