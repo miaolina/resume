@@ -21,7 +21,6 @@ i {
 }
 #bg {
   width: 100%;
-  height: 979px;
   background-image: url(../img/bg01.jpg);
 }
 .firstpage {
@@ -815,10 +814,15 @@ i {
 }
 #content {
   padding: 10% 0;
-  height: 600px;
   background: #333;
 }
+#content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 #content ul li {
+  margin: 10px 7%;
   list-style: none;
   text-align: center;
   cursor: pointer;

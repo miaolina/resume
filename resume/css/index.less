@@ -12,7 +12,6 @@ body,h1,h2,h3,h4,h5,h6,ul,li,p,span,b,i{
 //首页
 #bg{
   width:100%;
-  height:979px;
   background-image: url(../img/bg01.jpg);
 }
 .firstpage{
@@ -847,10 +846,14 @@ body,h1,h2,h3,h4,h5,h6,ul,li,p,span,b,i{
 //联系我
 #content{
   padding:10% 0;
-  height: 600px;
   background:#333;
   ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
     li{
+      margin:10px 7%;
       list-style: none;
       text-align: center;
       cursor:pointer;
