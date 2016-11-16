@@ -1,0 +1,517 @@
+*{
+  font-family:"Roboto Slab",sans-serif;
+  color:#fff;
+  font-family: 'microsoft yahei';
+
+}
+body,h1,h2,h3,h4,h5,h6,ul,li,p,span,b,i{
+  margin:0;
+  padding:0;
+
+}
+//首页
+#bg{
+  width:100%;
+  height:979px;
+  background-image: url(../img/bg01.jpg);
+}
+.firstpage{
+  background-color: rgba(0,0,0,.2);
+}
+.head{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding:20px;
+  position:fixed;
+  z-index:1001;
+  background-color: rgba(0,0,0,0);
+}
+
+.head div{
+  padding-left:15%;
+}
+.head img{
+  margin-right:10px;
+}
+.head h1{
+  display:inline-block;
+}
+.head ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-right:15%;
+  margin-bottom: 0;
+}
+.head ul li{
+  padding:15px;
+}
+.head ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-size:1.2em;
+}
+/*begin*/
+.begin{
+  text-align:center;
+ span{
+  background:none;
+  border-bottom:3px solid #fff;
+  display:inline-block;
+  width:30%;
+  padding:10px;
+  font-size: 4em;
+  margin-top:20%;
+  cursor: pointer;
+  transition: color 1s ease-out;
+  animation:fadeInUp 1s linear 0.4s 1;
+   &:hover{
+    color: #FFB9FF;
+  }
+ }
+}
+
+//声明动画
+@keyframes fadeInUp{
+  0%{transform:translateY(80px);opacity:0;}
+  100%{transform:translateY(0px);opacity:1;}
+
+}
+@keyframes begin{
+  0%{
+    transform:translatey(0);
+    opacity: 1;
+  }
+
+  100%{
+    transform:translatey(50px);
+    opacity: 0;
+  }
+
+}
+.begin a img{
+  /*页面加载时就实现动画加载的效果*/
+  /*名称、时长、速度时间曲线函数、延迟*/
+  animation:begin 1.5s linear 0s infinite;
+  -webkit-animation:begin 1.5s linear 0s infinite;
+}
+.begin div{
+  margin-top:21%;
+  padding-bottom: 3%;
+}
+
+//个人简介
+.down{
+  margin-top:15%;
+  animation:begin 1.5s linear 0s infinite;
+}
+#individual_profiles {
+  color:#000;
+  padding-top:10%;
+  .container{
+    text-align: center;
+    h3{
+      color:#000;
+      margin-bottom: 7%;
+      animation:fadeInUp 500ms linear 100ms 1;
+      animation-fill-mode:both;
+      animation-play-state: paused;
+    }
+    ul{
+      li{
+        padding:10px;
+        text-align: left;
+        margin-top:10px;
+        p{
+          color:#000;
+          display: inline-block;
+        }
+      }
+    }
+
+    }
+}
+
+
+#individual_profiles ul li:nth-child(1){
+  animation:fadeInUp 500ms linear 300ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#individual_profiles ul li:nth-child(2){
+  animation:fadeInUp 500ms linear 600ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#individual_profiles ul li:nth-child(3){
+  animation:fadeInUp 500ms linear 900ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#individual_profiles ul li:nth-child(4){
+  animation:fadeInUp 500ms linear 1200ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#individual_profiles ul li:nth-child(5){
+  animation:fadeInUp 500ms linear 1500ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#individual_profiles ul li:nth-child(6){
+  animation:fadeInUp 500ms linear 1800ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+
+
+//往期作品
+#production {
+  margin-top:10%;
+  padding-top:10%;
+  padding-bottom:10%;
+  text-align: center;
+  background:#FFD6E9;
+  h3{
+    color:#000;
+    margin-bottom: 7%;
+  }
+  .menu {
+    .menu_list {
+      cursor: pointer;
+
+      ul {
+        display: none;
+      }
+    }
+    .menu_list-active1,
+    .menu_list-active2,
+    .menu_list-active3
+    {
+      ul{
+        display:block;
+      }
+    }
+  }
+}
+
+#production h3+ul>li:nth-child(1){
+  animation:fadeInUp 500ms linear 300ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#production h3+ul>li:nth-child(2){
+  animation:fadeInUp 500ms linear 600ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#production h3+ul>li:nth-child(3){
+  animation:fadeInUp 500ms linear 900ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+
+
+//项目一
+.menu_list-active1 > ul li:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: menu1 ease-in-out forwards;
+  animation: menu1 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+.menu_list-active1 > ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: menu1 ease-in-out forwards;
+  animation: menu1 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
+.menu_list-active1 > ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: menu1 ease-in-out forwards;
+  animation: menu1 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay:300ms;
+  animation-delay: 300ms;
+}
+.menu_list-active1 > ul li:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: menu1 ease-in-out forwards;
+  animation: menu1 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+}
+@-webkit-keyframes menu1 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+//项目二
+.menu_list-active2 > ul li:nth-child(1) {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: menu2 ease-in-out forwards;
+  animation: menu2 ease-in-out forwards;
+  -webkit-animation-duration: 175ms;
+  animation-duration: 175ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+.menu_list-active2 > ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: menu2 ease-in-out forwards;
+  animation: menu2 ease-in-out forwards;
+  -webkit-animation-duration: 175ms;
+  animation-duration: 175ms;
+  -webkit-animation-delay:150ms;
+  animation-delay: 150ms;
+}
+.menu_list-active2 > ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: menu2 ease-in-out forwards;
+  animation: menu2 ease-in-out forwards;
+  -webkit-animation-duration: 175ms;
+  animation-duration: 175ms;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+.menu_list-active2 > ul li:nth-child(4) {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: menu2 ease-in-out forwards;
+  animation: menu2 ease-in-out forwards;
+  -webkit-animation-duration: 175ms;
+  animation-duration: 175ms;
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+}
+@-webkit-keyframes menu2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) scale(0.3);
+    transform: translateY(-100%) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) scale(0.3);
+    transform: translateY(-100%) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+
+//项目三
+.menu_list-active3 > ul li:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: menu3 ease-in-out forwards;
+  animation: menu3 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+.menu_list-active3 > ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: menu3 ease-in-out forwards;
+  animation: menu3 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 125ms;
+  animation-delay: 125ms;
+}
+.menu_list-active3 > ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: menu3 ease-in-out forwards;
+  animation: menu3 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+.menu_list-active3 > ul li:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: menu3 ease-in-out forwards;
+  animation: menu3 ease-in-out forwards;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+}
+@-webkit-keyframes menu3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+}
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+}
+
+
+//技能分析
+#skill{
+  padding:8% 0;
+  background:#fff;
+  .container{
+    text-align: center;
+    h3{
+      color:#000;
+    }
+    .skilarc{
+      li {
+        list-style: none;
+        position: relative;
+        canvas {
+        }
+        span {
+          color: #000;
+          position: absolute;
+          top: 172px;
+          left: 200px;
+        }
+        p{
+          color: #000;
+          position: absolute;
+          top: 200px;
+          left:200px;
+        }
+      }
+    }
+  }
+}
+#skill ul li:nth-child(1){
+  animation:fadeInUp 500ms linear 300ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#skill ul li:nth-child(2){
+  animation:fadeInUp 500ms linear 600ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#skill ul li:nth-child(3){
+  animation:fadeInUp 500ms linear 900ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#skill ul li:nth-child(4){
+  animation:fadeInUp 500ms linear 1200ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#skill ul li:nth-child(5){
+  animation:fadeInUp 500ms linear 1500ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#skill ul li:nth-child(6){
+  animation:fadeInUp 500ms linear 1800ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+
+
+
+//获奖情况
+#tucker{
+  padding:10% 0;
+  background-color:#DBDBF0;
+  position:relative;
+  height:1200px;
+  top: 0;
+  left: 0;
+}
+
+//联系我
+#content{
+  padding:10% 0;
+  height: 600px;
+  background:#333;
+  ul{
+    li{
+      list-style: none;
+      text-align: center;
+      cursor:pointer;
+    }
+
+  }
+}
+
+
+#content ul li:nth-child(1){
+  animation:fadeInUp 500ms linear 300ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#content ul li:nth-child(2){
+  animation:fadeInUp 500ms linear 600ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+#content ul li:nth-child(3){
+  animation:fadeInUp 500ms linear 900ms 1;
+  animation-fill-mode:both;
+  animation-play-state:paused;
+}
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="icon" href="img/head.png"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="css/imageFlow.css"/>
+</head>
+<body>
+
+<div id="bg">
+  <div class="firstpage">
+    <div class="head">
+      <div>
+        <img src="img/header.png" alt=""/>
+        <h1>miao</h1>
+      </div>
+      <ul >
+        <li><a href="#" onclick="jumptop()">首页</a></li>
+        <li><a href="#individual_profiles" onclick="jump()">个人简介</a></li>
+        <li><a href="#production" onclick="jump()">往期作品</a></li>
+        <li><a href="#skill" onclick="jump()">技能分析</a></li>
+        <li><a href="#tucker" onclick="jump()">获奖情况</a></li>
+        <li><a href="#content" onclick="jump()">联系方式</a></li>
+      </ul>
+    </div>
+    <div class="begin">
+      <span>Hello World</span>
+      <div >
+        <a href="#individual_profiles" onclick="jump()"><img src="img/down.png" alt=""/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="individual_profiles" name="individual_profiles">
+  <div class="container">
+    <h3>个人简介</h3>
+    <ul class="row">
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/account-filling.png" alt=""/>
+        <p>姓名：苗丽娜</p>
+      </li>
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/credit-level-filling.png" alt=""/>
+        <p>籍贯：江苏镇江</p>
+      </li>
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/school.png" alt=""/>
+        <p>学校：江苏理工学院</p>
+      </li>
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/teach.png" alt=""/>
+        <p>教育时间：2013-2016</p>
+      </li>
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/phone.png" alt=""/>
+        <p>电话：15961287726</p>
+      </li>
+      <li class="col-md-offset-2 col-md-4">
+        <img src="img/email.png" alt=""/>
+        <p>邮箱：miaomiaoweb@163.com</p>
+      </li>
+    </ul>
+    <a href="#production" onclick="jump()"><img class="down" src="img/down%20(1).png" alt=""/></a>
+  </div>
+</div>
+<div id="production" name="production">
+  <div class="container">
+    <h3>往期作品</h3>
+    <ul class="menu row">
+      <li  class="menu_list col-md-4" onclick="toggleClass1(this)"><img src="img/myproduction011.png" alt=""/>
+        <ul>
+          <li><img src="img/myproduction012.png" alt=""/></li>
+          <li><img src="img/myproduction013.png" alt=""/></li>
+          <li><img src="img/myproduction014.png" alt=""/></li>
+          <li><img src="img/myproduction015.png" alt=""/></li>
+        </ul>
+      </li>
+      <li class="menu_list col-md-4" onclick="toggleClass2(this)"><img src="img/myproduction021.png" alt=""/>
+        <ul>
+          <li><img src="img/myproduction022.png" alt=""/></li>
+          <li><img src="img/myproduction023.png" alt=""/></li>
+          <li><img src="img/myproduction024.png" alt=""/></li>
+          <li><img src="img/myproduction025.png" alt=""/></li>
+        </ul>
+      </li>
+      <li class="menu_list col-md-4" onclick="toggleClass3(this)"><img src="img/myproduction031.png" alt=""/>
+        <ul>
+          <li><img src="img/myproduction032.png" alt=""/></li>
+          <li><img src="img/myproduction033.png" alt=""/></li>
+          <li><img src="img/myproduction034.png" alt=""/></li>
+          <li><img src="img/myproduction035.png" alt=""/></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#skill" onclick="jump()"><img class="down" src="img/down%20(2).png" alt=""/></a>
+
+  </div>
+</div>
+<div id="skill" name="skill">
+  <div class="container">
+    <h3>技能分析</h3>
+    <ul class="skilarc row" onmouseover="drawskill()">
+        <li class="col-md-4">
+          <canvas id="skill01" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext1">10%</span>
+          <p>html/css</p>
+        </li>
+        <li class="col-md-4">
+          <canvas id="skill02" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext2">10%</span>
+          <p>Bootstrap <br/>/jQuery<br/>/AuglarJS</p>
+        </li>
+        <li class="col-md-4">
+          <canvas id="skill03" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext3">10%</span>
+          <p>H5</p>
+        </li>
+        <li class="col-md-4">
+          <canvas id="skill04" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext4">10%</span>
+          <p>JS</p>
+        </li>
+        <li class="col-md-4">
+          <canvas id="skill05" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext5">10%</span>
+          <p>PHP</p>
+        </li>
+        <li class="col-md-4">
+          <canvas id="skill06" width="400" height="400">
+            抱歉，您的版本不支持canvas
+          </canvas>
+          <span class="updatetext6">10%</span>
+          <p>SQL</p>
+        </li>
+
+      </ul>
+    <a href="#tucker" onclick="jump()"><img class="down" src="img/down%20(1).png" alt=""/></a>
+
+  </div>
+</div>
+<div id="tucker" name="tucker">
+  <div id="imageFlow">
+    <div class="top">
+    </div>
+    <div class="bank">
+
+      <a rel="images/IMG2.jpg" title="Much work" href="#">
+        ...remains to be done before we can announce our total failure to make any
+        progress</a>
+      <a rel="images/IMG3.jpg" title="System error" href="#">
+        Errare Programma Est</a>
+      <a rel="images/IMG4.jpg" title="Nonexistance" href="#">
+        There&#39;s no such thing</a>
+      <a rel="images/IMG5.jpg" title="Inside" href="#">
+        I抦 now trapped, without hope of escape or rescue</a>
+      <a rel="images/IMG6.jpg" title="E-Slaves" href="#">
+        The World is flat</a>
+
+    </div>
+    <div class="text">
+      <div class="title">
+        Loading</div>
+      <div class="legend">
+        Please wait...</div>
+    </div>
+    <div class="scrollbar">
+      <img class="track" src="images/track.jpg" alt="">
+      <img class="arrow-left" src="images/sign_out.png" alt="">
+      <img class="arrow-right" src="images/sign_in.png" alt="">
+      <img class="bar" src="images/bar.jpg" alt=""> </div>
+  </div>
+</div>
+<div id="content" name="content">
+  <div class="container">
+    <ul class="row">
+      <li class="col-md-4" onclick="imgclick('qq')"><img src="img/qq.png" alt=""/></li>
+      <li class="col-md-4" onclick="imgclick('weibo')"><img src="img/weibo.png" alt=""/></li>
+      <li class="col-md-4" onclick="imgclick('weixin')"><img src="img/weixin.png" alt=""/></li>
+    </ul>
+    <!--图片模态对话框-->
+    <div class="modal" id="imgclick" onclick="imgclick()">
+      <div class="modal-dialog">
+        <div>
+          <span class="glyphicon glyphicon-remove" id="imgclose" onclick="imgclose()"></span>
+          <img src="img/qq.jpg" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/imageFlow.js"></script>
+</body>
+</html>
